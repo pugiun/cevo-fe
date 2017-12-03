@@ -1,0 +1,118 @@
+{
+  "categories": [
+    {
+      "name": "Category 1",
+      "id": "1",
+      "areas": [
+        { "name": "Area 1", "id": "1" },
+        { "name": "Area 2", "id": "2" },
+        { "name": "Area 3", "id": "3" },
+        { "name": "Area 4", "id": "4" },
+        { "name": "Area 5", "id": "5" }
+      ]
+    },
+    {
+      "name": "Category 2",
+      "id": "2",
+      "areas": [
+        { "name": "Area 1",
+          "id": "1",
+          "subs": [
+            { "name": "Sub-Area 1", "id": "1" },
+            { "name": "Sub-Area 2", "id": "2" },
+            { "name": "Sub-Area 3", "id": "3" }
+          ]
+        },
+        { "name": "Area 2", "id": "2" },
+        { "name": "Area 3", "id": "3" },
+        { "name": "Area 4", "id": "4" },
+        { "name": "Area 5", "id": "5" },
+        { "name": "Area 6", "id": "6" },
+        { "name": "Area 7", "id": "7" },
+        { "name": "Area 8", "id": "8" },
+        { "name": "Area 9", "id": "9" },
+        { "name": "Area 10", "id": "10" },
+        { "name": "Area 11", "id": "11" },
+        { "name": "Area 12", "id": "12" },
+        { "name": "Area 13", "id": "13" },
+        { "name": "Area 14", "id": "14" },
+        { "name": "Area 15", "id": "15" },
+        { "name": "Area 16", "id": "16" },
+        { "name": "Area 17", "id": "17" },
+        { "name": "Area 18", "id": "18" },
+        { "name": "Area 19", "id": "19" },
+        { "name": "Area 20", "id": "20" },
+        { "name": "Area 21", "id": "21" },
+        { "name": "Area 22", "id": "22" },
+        { "name": "Area 23", "id": "23" },
+        { "name": "Area 24", "id": "24" },
+        { "name": "Area 25", "id": "25" },
+        { "name": "Area 26", "id": "26" },
+        { "name": "Area 27", "id": "27" },
+        { "name": "Area 28", "id": "28" },
+        { "name": "Area 29", "id": "29" },
+        { "name": "Area 30", "id": "30" }
+      ]
+    },
+    {
+      "name": "Category 3",
+      "id": "3",
+      "areas": [
+        { "name": "Area 1",
+          "id": "1",
+          "subs": [
+            { "name": "Sub-Area 1",
+              "id": "1",
+              "children": [
+                { "name": "Child-Area 1", "id": "1" },
+                { "name": "Child-Area 2", "id": "2" },
+                { "name": "Child-Area 3", "id": "3" },
+                { "name": "Child-Area 4", "id": "4" },
+                { "name": "Child-Area 5", "id": "5" },
+                { "name": "Child-Area 6", "id": "6" }
+              ]
+            },
+            { "name": "Sub-Area 2", "id": "2" },
+            { "name": "Sub-Area 3", "id": "3" }
+          ]
+        },
+        { "name": "Area 2",
+           "id": "2",
+          "subs": [
+            { "name": "Sub-Area 1", "id": "1" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Category 4",
+      "id": "4",
+      "areas": [
+        { "name": "Area 1",
+          "id": "1",
+          "subs": [
+            { "name": "Sub-Area 1", "id": "1" }
+          ]
+        },
+        { "name": "Area 2",
+          "id": "2",
+          "subs": [
+            { "name": "Sub-Area 1", "id": "1" }
+          ]
+        },
+        { "name": "Area 3",
+          "id": "3",
+          "subs": [
+            { "name": "Sub-Area 1", "id": "1" }
+          ]
+        },
+        { "name": "Area 4",
+          "id": "4",
+          "subs": [
+            { "name": "Sub-Area 1", "id": "1" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="ngCevo" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+
+    <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"
+            ng-click="menuCollapsed = ! menuCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+            CEVO -- FE Exam
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" collapse="menuCollapsed">
+          <ul class="nav navbar-nav">
+            <li ng-repeat="category in nav.categories" class="dropdown">
+              <a href="#/category/{{category.id}}">
+                {{ category.name }}
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" ng-if="category.areas">
+                <li ng-repeat="area in category.areas">
+                  <a href="#/category/{{category.id}}/area/{{area.id}}">
+                    {{ area.name }}
+                  </a>
+                  <ul ng-if="area.subs" class="dropdown-submenu">
+                    <li ng-repeat="sub in area.subs">
+                      <a href="#/category/{{category.id}}/area/{{area.id}}/sub/{{sub.id}}">
+                        {{ sub.name }}
+                      </a>
+                      <ul ng-if="sub.children" class="child-menu">
+                          <li ng-repeat="child in sub.children">
+                            <a href="#/category/{{category.id}}/area/{{area.id}}/sub/{{sub.id}}/child/{{child.id}}">
+                              {{ child.name }}
+                            </a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" ui-view="main"></div>
+
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
+  </body>
+</html>
